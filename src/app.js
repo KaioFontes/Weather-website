@@ -62,7 +62,7 @@ app.get('/weather', (req,res) =>{
             }
 
             res.send({
-                forecast:`${weather} the day. Its currently ${temperature} degree out. There is ${feelslike}% chance of rain. and the humidity is ${humidity}` ,
+                forecast:`${weather} the day. Its currently ${temperature} degree out. There is ${feelslike}% chance of rain. and the humidity is ${humidity} ` ,
                 location: location ,
                 address: req.query.address
             })
