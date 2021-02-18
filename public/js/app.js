@@ -7,7 +7,7 @@ btn.addEventListener('click',(e) => {
 
     result.innerHTML = 'Loading...'
 
-    fetch('http://localhost:3000/weather?address=' + encodeURIComponent(input.value)).then((response) => {
+    fetch('/weather?address=' + encodeURIComponent(input.value)).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 result.innerHTML = data.error;
