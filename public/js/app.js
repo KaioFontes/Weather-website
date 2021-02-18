@@ -14,7 +14,6 @@ btn.addEventListener('click',(e) => {
             }else{
                 result.innerHTML = data.forecast;
                 result.innerHTML += data.location;
-                
             }
     
         })
